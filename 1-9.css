@@ -28,8 +28,8 @@ main {
   background-color: #eee;
 }
 
-.step{
-  color:white;
+.step {
+  color: white;
   background-color: #ff9a4b;
   position: absolute;
   top: 0;
@@ -38,22 +38,38 @@ main {
 
 .syasin0 {
   height: 150px;
+  background-size: cover;
+  background-position: center;
 }
 
 .syasin1 {
   background-image: url(img/flow01.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .syasin2 {
   background-image: url(img/flow02.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .syasin3 {
   background-image: url(img/flow03.png);
-  background-size: cover;
-  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hako {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .syasin0 {
+    background-position: bottom;
+  }
+
+  .hako:nth-child(2) {
+    margin: 20px auto;
+  }
 }
